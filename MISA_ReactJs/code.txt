@@ -1,0 +1,30 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Form, Input } from 'antd';
+
+InputField.propTypes = {};
+
+function InputField(props) {
+    const { field, form, label, placeholder, required } = props;
+    const { name, value, onChange, onBlur } = field;
+    const { errors, touched } = form;
+    return (
+        <>
+            <Form.Item
+                label={label}
+                name={name}
+                value={value}
+                onChange={onChange}
+                onBlur={onBlur}
+                placeholder={placeholder}
+                required={required}
+                validateStatus={touched[name] && errors[name] ? 'error' : 'success'}
+                help={touched[name] && errors[name] ? errors[name] : ''}
+            >
+                <Input />
+            </Form.Item>
+        </>
+    );
+}
+
+export default InputField;

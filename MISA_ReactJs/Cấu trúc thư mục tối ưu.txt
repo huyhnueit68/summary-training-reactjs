@@ -1,0 +1,18 @@
+CẤU TRÚC THƯ MỤC REACT TỐI ƯU
+
+1. .vscode: Folder chứa các setting cho Visual Studio Code
+2. public: Folder này của React tạo ra, mình không bàn tới nhé
+3. @types: Chứa các file định nghĩa interface, type cho Typescript
+4. apis: Hay còn gọi là services. Chứa các khai báo function get api như axios,…
+5. App: Chứa component App
+6. assets: Chứa ảnh, videos, file, …
+7. components: Chứa các folder component, trong mỗi folder là các file component
+8. constansts: Chứa các các hằng số, enum
+8. guards: Chứa các Route cần quyền truy cập
+9. helpers: Chứa các function hay dùng, lặp đi lặp lại
+10. hooks: Chứa các hook đang dùng
+11. layouts: Chứa layout của dự án
+12. pages: Chứa các trang của dự án
+13. reducer: Chứa file reducer
+14. routes: Chứa các route
+15. store: chứa file store
